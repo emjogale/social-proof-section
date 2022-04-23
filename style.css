@@ -123,14 +123,13 @@ select {
 body {
 	font-family: "League Spartan", sans-serif;
 	color: var(--dark-magenta);
-	background: url(./images/bg-pattern-top-mobile.svg), top,
-		no-repeat url(./images/bg-pattern-bottom-mobile.svg), bottom, no-repeat;
+	background: url(./images/bg-pattern-top-mobile.svg) no-repeat;
 }
 
 /* composition - high level flexible layout */
 .flow > * + * {
-	margin-top: 1em;
-	/* border: 1px solid; */
+	margin-top: 1.5em;
+	border: 1px solid;
 }
 
 .flex-flow-column {
@@ -164,7 +163,8 @@ body {
 
 /* block */
 header h2 {
-	padding: var(--space-1) 2rem;
+	padding: var(--space-1) var(--space-4);
+	margin-top: 2rem;
 }
 
 header p {
@@ -207,6 +207,7 @@ p.rating {
 	display: block;
 	color: var(--soft-pink);
 	font-weight: var(--fw-400);
+	line-height: 0.5;
 }
 footer.attribution {
 	font-size: 11px;
@@ -214,4 +215,8 @@ footer.attribution {
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+/* desktop styles */
+@media only screen and (min-width: 1000px) {
 }
