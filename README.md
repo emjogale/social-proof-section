@@ -50,6 +50,7 @@ I watched Kevin Powell's YouTube video where he uses CUBE CSS on the Order Summa
 ### Continued development
 
 I really beleive CUBE CSS is the way forward. So that is my continued development!
+Also Grid layouts - there's a lot to be learnt here too....
 
 ### Useful resources
 

@@ -2,12 +2,14 @@
 :root {
 	--dark-magenta: hsl(300, 43%, 22%);
 	--mid-magenta: hsl(301, 10%, 53%);
-	--soft-pink: hsl(333, 80%, 67%);
+	--soft-pink: hsl(333, 75%, 70%);
+	--pale-magenta: hsl(300, 29%, 97%);
 	--white: hsla(0, 0%, 100%, 1);
 
 	--fs-sm: 0.81rem;
 	--fs-md: 1.75rem;
 	--fs-lg: 2rem;
+	--fs-xl: 3rem;
 
 	--fw-400: 400;
 	--fw-500: 500;
@@ -53,7 +55,7 @@ html:focus-within {
 }
 
 /* Set core body defaults */
-body {
+main {
 	min-height: 100vh;
 	font-size: var(--fs-400);
 	line-height: 1.6;
@@ -123,13 +125,16 @@ select {
 body {
 	font-family: "League Spartan", sans-serif;
 	color: var(--dark-magenta);
-	background: url(./images/bg-pattern-top-mobile.svg) no-repeat;
+	background: url(./images/bg-pattern-top-mobile.svg) no-repeat,
+		url(./images/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
+	display: flex;
+	justify-content: center;
+	place-items: center;
 }
 
 /* composition - high level flexible layout */
 .flow > * + * {
 	margin-top: 1.5em;
-	border: 1px solid;
 }
 
 .flex-flow-column {
@@ -164,7 +169,8 @@ body {
 /* block */
 header h2 {
 	padding: var(--space-1) var(--space-4);
-	margin-top: 2rem;
+	margin-top: var(--space-4);
+	font-size: var(--fs-lg);
 }
 
 header p {
@@ -172,7 +178,9 @@ header p {
 }
 
 .rating {
-	padding: 1rem;
+	padding: 0.5rem;
+	background-color: var(--pale-magenta);
+	border-radius: 0.5rem;
 }
 .stars img {
 	display: inline;
@@ -183,11 +191,13 @@ p.rating {
 }
 
 .card {
+	margin-bottom: var(--space-1);
 	padding: var(--space-4);
-	color: var(--white);
+	color: var(--pale-magenta);
 	background-color: var(--dark-magenta);
 	font-size: var(--fs-sm);
 	border-radius: 0.5rem;
+	max-height: 14.625rem;
 }
 
 .card-header {
@@ -218,8 +228,68 @@ footer.attribution {
 }
 
 /* desktop styles */
-@media only screen and (min-width: 1000px) {
-	body {
+@media only screen and (min-width: 1030px) {
+	main {
 		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"header ratings"
+			"reviews reviews";
+		gap: 4rem;
+		max-width: 1110px;
+		max-height: 575px;
+		border: 1px solid black;
+		padding: 8rem 6rem;
+	}
+	header {
+		grid-area: header;
+		text-align: left;
+		padding-right: 2.1rem;
+	}
+
+	header h2 {
+		padding: 0;
+		font-size: var(--fs-xl);
+	}
+
+	.ratings {
+		grid-area: ratings;
+		margin-top: 3rem;
+	}
+
+	.rating {
+		width: 85%;
+	}
+	.rating2 {
+		margin: 1em auto;
+	}
+	.rating3 {
+		margin-left: auto;
+	}
+	.rating p {
+		display: inline;
+		margin-left: var(--space-3);
+	}
+	.review-cards {
+		grid-area: reviews;
+		display: flex;
+		margin-top: 0;
+	}
+
+	.card:not(:last-child) {
+		margin-right: 1.875rem;
+	}
+
+	.card2 {
+		margin-top: 0.75rem;
+	}
+
+	.card3 {
+		margin-top: 1.5rem;
+	}
+
+	.card {
+		height: 90%;
 	}
 }
+/* TODO: desktop background images! */
