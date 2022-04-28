@@ -236,7 +236,8 @@ footer.attribution {
 
 	.ratings {
 		grid-area: ratings;
-		margin-top: 3rem;
+		margin-top: 4rem;
+		text-align: left;
 	}
 
 	.rating {
