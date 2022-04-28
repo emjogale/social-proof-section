@@ -45,12 +45,12 @@ Users should be able to:
 
 ### What I learned
 
-I watched Kevin Powell where he uses CUBE CSS on the Order Summary challenge and was really interested to try this approach myself. I don't know how much this particular challenge lends itself to CUBE but I had a go anyway. I really love the way `.flow > * + *` works! I was really taken by this - I used a border on this class initially to see the effect it has on a layout. I love the idea of using the cascade to 'flow' the styles. It makes so much sense! I have done a few challenges prior to this but this approach makes me realise I was kind of 'pixel pushing' on those and in my attempts to get the layout just right I was just tinkering around with the individual elements without too much thinking about the 'flow' of the whole page.
+I watched Kevin Powell where he uses CUBE CSS on the Order Summary challenge and was really interested to try this approach myself. I don't think this particular challenge lends itself to much to CUBE as it is very small but I had a go anyway. I really love the way `.flow > * + *` works! I was really taken by this - I used a border on this class initially to see the effect it has on a layout. I love the idea of using the cascade to 'flow' the styles. It makes so much sense! I have done a few challenges prior to this but this approach makes me realise I was kind of 'pixel pushing' on those and in my attempts to get the layout just right I was just tinkering around with the individual elements without too much thinking about the 'flow' of the whole page.
 
 ### Continued development
 
 I'm really motivated now to check the CUBE methodology out more - I beleive it's the way forward!
-Also Grid aned flex layouts - there's a lot to be learnt here beyond the basics....
+Also Grid and flex layouts - there's a lot to be learnt here beyond the basics....
 
 ### Useful resources
 
