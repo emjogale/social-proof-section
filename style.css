@@ -3,7 +3,7 @@
 	--dark-magenta: hsl(300, 43%, 22%);
 	--mid-magenta: hsl(301, 10%, 53%);
 	--soft-pink: hsl(333, 75%, 70%);
-	--pale-magenta: hsl(300, 29%, 98%);
+	--pale-magenta: hsl(300, 29%, 97%);
 	--white: hsla(0, 0%, 100%, 1);
 
 	--fs-sm: 0.81rem;
@@ -147,6 +147,7 @@ header h2 {
 	padding: var(--space-1) var(--space-4);
 	margin-top: var(--space-4);
 	font-size: var(--fs-lg);
+	font-weight: var(--fw-700);
 }
 
 header p {
@@ -154,16 +155,14 @@ header p {
 }
 
 .rating {
-	padding: 0.5rem;
+	padding: var(--space-1);
 	background-color: var(--pale-magenta);
 	border-radius: 0.5rem;
+	font-weight: var(--fw-700);
 }
 .stars img {
 	display: inline;
-}
-
-p.rating {
-	font-weight: var(--fw-700);
+	padding-left: 0.2rem;
 }
 
 .card {
@@ -174,6 +173,7 @@ p.rating {
 	font-size: var(--fs-sm);
 	border-radius: 0.5rem;
 	max-height: 14.625rem;
+	line-height: 1.7;
 }
 
 .card-header {
@@ -181,6 +181,7 @@ p.rating {
 	align-items: center;
 	gap: var(--space-1);
 	font-weight: var(--fw-700);
+	padding-bottom: var(--space-1);
 }
 
 .card-header .avatar {
@@ -189,8 +190,10 @@ p.rating {
 	border-radius: 50%;
 	overflow: hidden;
 }
-
-.card-header span {
+.reviewer-name {
+	font-size: var(--fs-400);
+}
+.reviewer-name span {
 	display: block;
 	color: var(--soft-pink);
 	font-weight: var(--fw-400);
