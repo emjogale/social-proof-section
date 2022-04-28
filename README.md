@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./images/screenshot.png)
 
 ### Links
 
 - Solution URL: [github.com/emjogale/social-proof-section](https://github.com/emjogale/social-proof-section)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [social-proof-section-emjogale.vercel.app](https://social-proof-section-emjogale.vercel.app/)
 
 ## My process
 
