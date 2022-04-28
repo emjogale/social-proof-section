@@ -3,7 +3,7 @@
 	--dark-magenta: hsl(300, 43%, 22%);
 	--mid-magenta: hsl(301, 10%, 53%);
 	--soft-pink: hsl(333, 75%, 70%);
-	--pale-magenta: hsl(300, 29%, 97%);
+	--pale-magenta: hsl(300, 29%, 98%);
 	--white: hsla(0, 0%, 100%, 1);
 
 	--fs-sm: 0.81rem;
@@ -133,21 +133,7 @@ body {
 	margin-top: 1.5em;
 }
 
-.flex-flow-column {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-}
-
 /* utility styling classes */
-.padding-48 {
-	padding: 3rem;
-}
-
-.text-align-center {
-	text-align: center;
-}
-
 .text-align-left {
 	text-align: left;
 }
@@ -266,11 +252,13 @@ footer.attribution {
 	.review-cards {
 		grid-area: reviews;
 		display: flex;
+		justify-content: space-between;
 		margin-top: 0;
 	}
 
 	.card {
 		max-width: 21.875rem;
+		height: 90%;
 	}
 
 	.card:not(:last-child) {
@@ -278,14 +266,10 @@ footer.attribution {
 	}
 
 	.card2 {
-		margin-top: 0.75rem;
+		margin-block: auto;
 	}
 
 	.card3 {
 		margin-top: var(--space-2);
-	}
-
-	.card {
-		height: 90%;
 	}
 }
