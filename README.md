@@ -14,7 +14,6 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -61,5 +60,3 @@ Also Grid and flex layouts - there's a lot to be learnt here beyond the basics..
 
 - Frontend Mentor - [@emjogale](https://www.frontendmentor.io/profile/emjogale)
 - Twitter - [@emmagale2635](https://www.twitter.com/emmagale2635)
-
-## Acknowledgments
